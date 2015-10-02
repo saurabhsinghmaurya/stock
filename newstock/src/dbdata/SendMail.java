@@ -21,13 +21,13 @@ public class SendMail {
 		Session session = Session.getDefaultInstance(props,
 			new javax.mail.Authenticator() {
 				protected PasswordAuthentication getPasswordAuthentication() {
-					return new PasswordAuthentication("saurabhsinghmaurya","9935620799");
+					return new PasswordAuthentication("","");
 				}
 			});
 		
 			
 						Message message = new MimeMessage(session);
-						message.setFrom(new InternetAddress("saurabhsinghmaurya@gmail.com"));
+						message.setFrom(new InternetAddress(""));
 						message.setRecipients(Message.RecipientType.TO,
 								InternetAddress.parse(user));
 						message.setSubject("Your password");
